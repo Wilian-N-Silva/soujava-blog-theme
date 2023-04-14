@@ -45,9 +45,26 @@
             <li><a href="#">Lojinha</a></li>
           </ul>
         </nav>
-        <div class="navigation__options">
+        <div class="header__options">
           <div class="navigation__search"></div>
-          <div class="navigation__theme"></div>
+          <div class="theme">
+            <button
+              class="theme__button"
+              id="change-theme-btn"
+              title="Mudar tema"
+            >
+              <img
+                class="theme__icon--moon light-mode-only"
+                src="./assets/icons/moon.svg"
+                alt=""
+              />
+              <img
+                class="theme__icon--sun dark-mode-only"
+                src="./assets/icons/sun.svg"
+                alt=""
+              />
+            </button>
+          </div>
           <div class="navigation__menu"></div>
         </div>
       </div>
@@ -91,5 +108,6 @@
         SouJava 2023 - Todos os direitos reservados
       </div>
     </footer>
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>

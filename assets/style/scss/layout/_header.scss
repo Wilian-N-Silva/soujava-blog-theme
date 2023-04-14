@@ -2,6 +2,7 @@
   padding: 8px 0 16px;
   &__brand {
     height: 46px;
+    width: 100%;
     max-width: 190px;
 
     img {
@@ -10,18 +11,55 @@
   }
 
   &__container {
-    padding: 0 24px; 
+    padding: 0 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 0 auto;
+  }
+
+  @include viewport-medium {
+    &__container {
+      padding: 0;
+      max-width: 672px;
+    }
+  }
+
+  @include viewport-xl {
+    &__container {
+      max-width: 1200px;
+    }
+  }
+
+  &__menu {
+  }
+
+  &__options {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    max-width: 190px;
+  }
+  &__search {
   }
 }
 .navigation {
   &__links {
+    display: none;
+    gap: 24px;
   }
-  &__menu {
+
+  @include viewport-xl {
+    &__links {
+      display: flex;
+    }
   }
-  &__options {
-  }
-  &__search {
-  }
-  &__theme {
+}
+
+.theme {
+  &__icon {
+    transition: 0.3s;
+    transform: rotate(120deg);
+    transform-origin: 0 20px;
   }
 }
