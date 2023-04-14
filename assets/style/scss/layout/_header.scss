@@ -1,0 +1,27 @@
+.header {
+  padding: 8px 0 16px;
+  &__brand {
+    height: 46px;
+    max-width: 190px;
+
+    img {
+      height: 100%;
+    }
+  }
+
+  &__container {
+    padding: 0 24px; 
+  }
+}
+.navigation {
+  &__links {
+  }
+  &__menu {
+  }
+  &__options {
+  }
+  &__search {
+  }
+  &__theme {
+  }
+}

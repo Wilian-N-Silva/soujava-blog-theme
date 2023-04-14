@@ -1,0 +1,36 @@
+@mixin viewport-small {
+  @media screen and (min-width: 576px) {
+    @content;
+  }
+}
+@mixin viewport-medium {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+@mixin viewport-large {
+  @media screen and (min-width: 992px) {
+    @content;
+  }
+}
+@mixin viewport-xl {
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
+}
+@mixin viewport-xxl {
+  @media screen and (min-width: 1400px) {
+    @content;
+  }
+}
+
+// @media (prefers-color-scheme: dark) {
+//   .light-mode-only {
+//     display: none;
+//   }
+// }
+// @media (prefers-color-scheme: light) {
+//   .dark-mode-only {
+//     display: none;
+//   }
+// }
