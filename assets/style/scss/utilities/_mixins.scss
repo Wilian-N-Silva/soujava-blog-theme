@@ -1,20 +1,21 @@
+
 @mixin viewport-small {
-  @media screen and (min-width: 576px) {
+  @media screen and (min-width: $viewport-min-width-small) {
     @content;
   }
 }
 @mixin viewport-medium {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $viewport-min-width-medium) {
     @content;
   }
 }
 @mixin viewport-large {
-  @media screen and (min-width: 992px) {
+  @media screen and (min-width: $viewport-min-width-large) {
     @content;
   }
 }
 @mixin viewport-xl {
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $viewport-min-width-xl) {
     @content;
   }
 }

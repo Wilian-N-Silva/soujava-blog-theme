@@ -14,7 +14,7 @@
     <header class="header">
       <div class="header__container">
         <div class="header__brand">
-          <img
+          <!-- <img
             class="mobile-only light-mode-only"
             src="./assets/images/brand/soujava-mug.svg"
             alt=""
@@ -23,14 +23,14 @@
             class="mobile-only dark-mode-only"
             src="./assets/images/brand/soujava-mug-pb.svg"
             alt=""
-          />
+          /> -->
           <img
-            class="desktop-only light-mode-only"
+            class="light-mode-only"
             src="./assets/images/brand/soujava-brand.svg"
             alt=""
           />
           <img
-            class="desktop-only dark-mode-only"
+            class="dark-mode-only"
             src="./assets/images/brand/soujava-brand-pb.svg"
             alt=""
           />
@@ -65,7 +65,20 @@
               />
             </button>
           </div>
-          <div class="navigation__menu"></div>
+          <div class="navigation__menu mobile-only">
+            <button class="menu__button">
+              <img
+                class="light-mode-only"
+                src="./assets/icons/list-dark.svg"
+                alt=""
+              />
+              <img
+                class="dark-mode-only"
+                src="./assets/icons/list.svg"
+                alt=""
+              />
+            </button>
+          </div>
         </div>
       </div>
     </header>

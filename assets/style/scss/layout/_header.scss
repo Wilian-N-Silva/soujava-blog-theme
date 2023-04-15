@@ -21,13 +21,18 @@
   @include viewport-medium {
     &__container {
       padding: 0;
-      max-width: 672px;
+      max-width: $container-max-width-medium;
     }
   }
 
   @include viewport-xl {
     &__container {
-      max-width: 1200px;
+      max-width: $container-max-width-xl;
+    }
+  }
+  @include viewport-xxl {
+    &__container {
+      max-width: $container-max-width-xxl;
     }
   }
 
@@ -47,6 +52,10 @@
   &__links {
     display: none;
     gap: 24px;
+
+    li {
+      font: $typography-navigation;
+    }
   }
 
   @include viewport-xl {

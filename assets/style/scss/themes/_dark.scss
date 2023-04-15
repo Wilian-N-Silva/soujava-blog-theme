@@ -1,17 +1,15 @@
 body.dark {
-  & .light-mode-only {
-    display: none;
-  }
-  & .dark-mode-only {
-    display: block;
-  }
-}
+  background: $color-open-color-gray-9;
 
-body {
   & .light-mode-only {
-    display: block;
+    display: none;
   }
   & .dark-mode-only {
-    display: none;
+    display: block;
+  }
+
+  .header,
+  .footer {
+    background: $color-open-color-gray-10;
   }
 }
