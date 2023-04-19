@@ -1,0 +1,88 @@
+.footer {
+  width: 100%;
+  padding: 32px 0;
+
+  &__container {
+    padding: 0 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+    gap: 32px;
+  }
+
+  &__brand {
+    & img {
+      max-width: 280px;
+    }
+  }
+
+  &__sitemap {
+    display: flex;
+    gap: 32px;
+    flex-direction: column;
+  }
+  &__section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+  }
+
+  &__title {
+    color: $color-open-color-gray-10;
+    font: $typography-heading-4;
+  }
+  &__links {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    color: $color-open-color-gray-9;
+  }
+  &__rights {
+    color: $color-open-color-gray-9;
+    margin-top: 64px;
+    text-align: center;
+    padding: 0 24px;
+  }
+
+  @include viewport-medium {
+    &__container {
+      padding: 0;
+      max-width: $container-max-width-medium;
+    }
+
+    &__sitemap {
+      flex-direction: row;
+      gap: 64px;
+    }
+
+    &__section {
+      align-items: flex-start;
+      text-align: start;
+    }
+
+  }
+
+  @include viewport-xl {
+    padding: 0 0 32px;
+
+    &__container {
+      flex-direction: row;
+      max-width: $container-max-width-xl;
+    }
+    &__title {
+      font: $typography-heading-3;
+    }
+    &__sitemap {
+      margin-top: 92px;
+    }
+  }
+  @include viewport-xxl {
+    &__container {
+      max-width: $container-max-width-xxl;
+    }
+  }
+}

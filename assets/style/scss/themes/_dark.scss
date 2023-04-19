@@ -12,4 +12,16 @@ body.dark {
   .footer {
     background: $color-open-color-gray-10;
   }
+
+  .footer {
+    &__title {
+      color: $color-open-color-gray-1;
+    }
+    &__links {
+      color: $color-open-color-gray-3;
+    }
+    &__rights {
+      color: $color-open-color-gray-3;
+    }
+  }
 }
