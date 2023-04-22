@@ -13,6 +13,18 @@ body.dark {
     background: $color-open-color-gray-10;
   }
 
+  .navigation {
+    &__links {
+      li {
+        color: $color-open-color-gray-1;
+
+        &::after {
+          background-color: $color-brand-yellow;
+        }
+      }
+    }
+  }
+
   .footer {
     &__title {
       color: $color-open-color-gray-1;

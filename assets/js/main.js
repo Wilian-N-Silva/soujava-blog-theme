@@ -6,13 +6,11 @@ const body = document.querySelector("body")
 const changeTheme = (state) => {}
 
 const handleDarkTheme = () => {
+  const bodyClasses = body.classList
+  const bodyContainsDarkClass = bodyClasses.contains("dark")
   const prefersDarkTheme = Number(
     localStorage.getItem(DARK_THEME_PREFERENCE_KEY)
   )
-
-  const bodyClasses = body.classList
-
-  const bodyContainsDarkClass = bodyClasses.contains("dark")
 
   if (prefersDarkTheme && !bodyContainsDarkClass) {
     bodyClasses.add("dark")
