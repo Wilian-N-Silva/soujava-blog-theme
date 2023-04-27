@@ -1,4 +1,5 @@
 body.dark {
+  color: $color-open-color-gray-1;
   background: $color-open-color-gray-9;
 
   & .light-mode-only {
@@ -34,6 +35,18 @@ body.dark {
     }
     &__rights {
       color: $color-open-color-gray-3;
+    }
+  }
+
+  .btn {
+    &--share {
+      color: $color-open-color-gray-5;
+    }
+  }
+
+  .author {
+    &__name {
+      color: $color-open-color-gray-1;
     }
   }
 }
