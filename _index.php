@@ -15,17 +15,17 @@
 
 
   <!-- <link rel="stylesheet" href="./assets/style/main.min.css" /> -->
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="<?php echo get_theme_file_uri('style.css'); ?>" />
 
 </head>
 
 <body>
-  <script src="./assets/js/theme.js"></script>
+  <script src="<?php echo get_theme_file_uri('/assets/js/theme.js'); ?>"></script>
   <header class="header">
     <div class="header__container">
       <div class="header__brand">
-        <img class="light-mode-only" src="./assets/images/brand/soujava-brand.svg" alt="" />
-        <img class="dark-mode-only" src="./assets/images/brand/soujava-brand-pb.svg" alt="" />
+        <img class="light-mode-only" src="<?php echo get_theme_file_uri('/assets/images/brand/soujava-brand.svg'); ?>" alt="" />
+        <img class="dark-mode-only" src="<?php echo get_theme_file_uri('/assets/images/brand/soujava-brand-pb.svg'); ?>" alt="" />
       </div>
       <nav class="navigation">
         <ul class="navigation__links">
@@ -41,14 +41,14 @@
         <div class="navigation__search"></div>
         <div class="theme desktop-only">
           <button class="theme__button" id="change-theme-btn" title="Mudar tema">
-            <img class="theme__icon--moon light-mode-only" src="./assets/icons/moon.svg" alt="" />
-            <img class="theme__icon--sun dark-mode-only" src="./assets/icons/sun.svg" alt="" />
+            <img class="theme__icon--moon light-mode-only" src="<?php echo get_theme_file_uri('/assets/icons/moon.svg'); ?>" alt="" />
+            <img class="theme__icon--sun dark-mode-only" src="<?php echo get_theme_file_uri('/assets/icons/sun.svg'); ?>" alt="" />
           </button>
         </div>
         <div class="navigation__menu mobile-only">
           <button class="menu__button">
-            <img class="light-mode-only" src="./assets/icons/list-dark.svg" alt="" />
-            <img class="dark-mode-only" src="./assets/icons/list.svg" alt="" />
+            <img class="light-mode-only" src="<?php echo get_theme_file_uri('/assets/icons/list-dark.svg'); ?>" alt="" />
+            <img class="dark-mode-only" src="<?php echo get_theme_file_uri('/assets/icons/list.svg'); ?>" alt="" />
           </button>
         </div>
       </div>
@@ -79,8 +79,8 @@
   <footer class="footer">
     <div class="footer__container">
       <div class="footer__brand">
-        <img class="light-mode-only" src="./assets/images/brand/soujava-brand-full.svg" alt="" />
-        <img class="dark-mode-only" src="./assets/images/brand/soujava-brand-full-pb.svg" alt="" />
+        <img class="light-mode-only" src="<?php echo get_theme_file_uri('/assets/images/brand/soujava-brand-full.svg'); ?>" alt="" />
+        <img class="dark-mode-only" src="<?php echo get_theme_file_uri('/assets/images/brand/soujava-brand-full-pb.svg'); ?>" alt="" />
       </div>
       <div class="footer__sitemap">
         <div class="footer__section">
@@ -120,7 +120,7 @@
       SouJava 2023 - Todos os direitos reservados
     </div>
   </footer>
-  <script src="./assets/js/main.js"></script>
+  <script src="<?php echo get_theme_file_uri('/assets/js/main.js'); ?>"></script>
 
 </body>
 
