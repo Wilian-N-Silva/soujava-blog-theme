@@ -12,6 +12,7 @@
     aspect-ratio: 1/1;
     background-color: $color-open-color-gray-5;
     border-radius: 50%;
+    overflow: hidden;
   }
   &__texts {
     display: flex;

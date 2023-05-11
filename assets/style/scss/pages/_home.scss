@@ -1,0 +1,73 @@
+.home {
+  width: 100%;
+  padding: 32px 24px 64px;
+
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-auto-rows: repeat(auto-fit, minmax(300px, 1fr));
+  align-items: flex-start;
+  justify-content: space-between;
+  column-gap: 16px;
+  row-gap: 32px;
+
+  .post-card {
+    min-height: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    &__cover {
+      width: 100%;
+      height: 300px;
+
+      & img {
+        border-radius: 16px;
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    &__data {
+      padding: 0 24px;
+    }
+  }
+
+  @include viewport-medium {
+    padding: 32px 0px 64px;
+    max-width: $container-max-width-medium;
+
+    .post-card {
+      &--highlight {
+        flex-direction: column;
+        grid-column: 1/-1;
+        gap: 32px;
+
+        .post-card__cover {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+
+  @include viewport-xl {
+    max-width: $container-max-width-xl;
+
+    .post-card {
+      &--highlight {
+        flex-direction: row;
+        grid-column: 1/-1;
+        gap: 32px;
+
+        .post-card__cover {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+  @include viewport-xxl {
+    max-width: $container-max-width-xxl;
+  }
+}

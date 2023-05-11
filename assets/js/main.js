@@ -36,3 +36,13 @@ window.onload = () => {
   }
   handleDarkTheme()
 }
+
+const homepage = document.querySelector(".home")
+const mockpost = homepage.querySelector(".copy-me")
+
+const NUMBER_OF_MOCKS = 5
+
+for (let index = 0; index < NUMBER_OF_MOCKS; index++) {
+  const mock = mockpost.cloneNode(true)
+  homepage.appendChild(mock)
+}
