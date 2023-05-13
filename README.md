@@ -2,7 +2,7 @@
 
 ## Template under development
 
-All files and changes will be available in `development` branch. [Click here to check development branch](/tree/development)
+All files and changes will be available in `development` branch. [Click here to check development branch](https://github.com/Wilian-N-Silva/soujava-blog-theme/tree/development)
 
 ## How to run
 
