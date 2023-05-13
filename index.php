@@ -14,3 +14,8 @@
 		<?php endif; ?>
 
 		<?php get_footer(); ?>
+		<script src="<?php echo get_theme_file_uri('/assets/js/main.js'); ?>"></script>
+
+		</body>
+
+		</html>
