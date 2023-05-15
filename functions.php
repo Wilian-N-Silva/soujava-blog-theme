@@ -41,9 +41,10 @@ if (!function_exists('soujava_theme_setup')) :
      * aside, gallery, quote, image, and video
      */
     // add_theme_support('post-formats', array('aside', 'gallery', 'quote', 'image', 'video'));
-    add_filter('show_admin_bar', '__return_true');
+    if (!current_user_can('manage_options')) {
+      show_admin_bar(false);
+    }
   }
 endif; // soujava_theme_setup
 
 add_action('after_setup_theme', 'soujava_theme_setup');
-add_filter('show_admin_bar', '__return_true');

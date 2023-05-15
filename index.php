@@ -4,13 +4,15 @@
 			<?php while (have_posts()) : the_post(); ?>
 				<div class="post-card<?php echo is_sticky() ? ' post-card--highlight' : ''; ?>">
 					<div class="post-card__cover">
-						<img src="<?php echo has_post_thumbnail() ? the_post_thumbnail_url() : 'https://soujava.org.br/wp-content/uploads/2020/02/design-sem-nome-1-620x200.png'; ?>" alt="" />
+						<a href="<?php echo get_permalink(); ?>">
+							<img src="<?php echo has_post_thumbnail() ? the_post_thumbnail_url() : get_theme_file_uri('/assets/images/placeholder.png'); ?>" alt="" />
+						</a>
 					</div>
 					<div class="post-card__data">
-						<h2 class="post-card__title"><?php the_title(); ?></h2>
+						<?php the_title(sprintf('<h2 class="post-card__title"><a href="%s">', esc_url(get_permalink())), '</a></h2>'); ?>
 					</div>
 				</div>
-			<?php endwhile; /* rewind or continue if all posts have been fetched */ ?>
+			<?php endwhile; ?>
 		<?php endif; ?>
 
 		<?php get_footer(); ?>
