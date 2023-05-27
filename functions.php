@@ -31,10 +31,16 @@ if (!function_exists('soujava_theme_setup')) :
     /**
      * Add support for two custom navigation menus.
      */
-    // register_nav_menus(array(
-    //   'primary'   => __('Primary Menu', 'myfirsttheme'),
-    //   'secondary' => __('Secondary Menu', 'myfirsttheme'),
-    // ));
+
+    register_nav_menus(
+      array(
+        'navigation-menu' => 'Navigation Menu',
+        'footer-menu-sou-java' => 'Sou Java',
+        'footer-menu-community' => 'Comunidade',
+        'footer-menu-social' => 'Redes Sociais',
+      )
+    );
+
 
     /**
      * Enable support for the following post formats:

@@ -1,11 +1,8 @@
 <header class="header">
   <div class="header__container">
 
-
-
     <?php get_template_part('template-parts/header/site-brand'); ?>
     <?php get_template_part('template-parts/header/site-nav'); ?>
-
 
     <div class="header__options">
       <div class="navigation__search"></div>
