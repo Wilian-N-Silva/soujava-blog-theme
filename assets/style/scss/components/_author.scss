@@ -7,13 +7,20 @@
     font: $typography-author;
     color: $color-open-color-gray-9;
   }
+
   &__picture {
     height: 48px;
     aspect-ratio: 1/1;
     background-color: $color-open-color-gray-5;
     border-radius: 50%;
     overflow: hidden;
+
+    & img {
+      object-fit: contain;
+      object-position: top;
+    }
   }
+
   &__texts {
     display: flex;
     flex-direction: column;
