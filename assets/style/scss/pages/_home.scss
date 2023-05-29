@@ -31,7 +31,11 @@
     }
 
     &__data {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
       padding: 0 24px;
+      justify-content: space-between;
     }
   }
 
@@ -47,6 +51,11 @@
 
         .post-card__cover {
           max-width: 100%;
+        }
+
+        .post-card__data {
+          padding: 24px;
+          gap: 16px;
         }
       }
     }

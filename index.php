@@ -10,6 +10,8 @@
 					</div>
 					<div class="post-card__data">
 						<?php the_title(sprintf('<h2 class="post-card__title"><a href="%s">', esc_url(get_permalink())), '</a></h2>'); ?>
+
+						<?php get_template_part('template-parts/post/author-bio'); ?>
 					</div>
 				</div>
 			<?php endwhile; ?>

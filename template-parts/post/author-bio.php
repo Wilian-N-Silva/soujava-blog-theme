@@ -1,5 +1,5 @@
 <?php if ((bool) post_type_supports(get_post_type(), 'author')) : ?>
-  <a class="author" href="<?php echo get_the_author_meta('user_url'); ?>">
+  <a class="author" href=" <?php echo get_author_posts_url(get_the_author_meta('ID')); ?>">
     <?php if (get_option('show_avatars')) : ?>
       <div class="author__picture">
         <?php echo get_avatar(get_the_author_meta('ID')); ?>
