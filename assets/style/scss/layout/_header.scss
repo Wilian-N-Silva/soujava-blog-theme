@@ -31,6 +31,7 @@
       max-width: $container-max-width-xl;
     }
   }
+
   @include viewport-xxl {
     &__container {
       max-width: $container-max-width-xxl;
@@ -43,7 +44,8 @@
     width: 100%;
     max-width: 190px;
 
-    & button {
+    & .menu__button {
+      position: relative;
       width: 40px;
       aspect-ratio: 1/1;
       display: flex;
@@ -51,12 +53,75 @@
       justify-content: center;
       background: none;
       border: none;
+
+      & img {
+        z-index: -1;
+
+        &.open {
+          display: block;
+        }
+
+        &.close {
+          display: none;
+        }
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      &--close {
+        z-index: 99;
+
+        img {
+          z-index: -1;
+
+          &.open {
+            display: none;
+          }
+
+          &.close {
+            display: block;
+          }
+        }
+      }
     }
   }
-  &__search {
-  }
+
+  &__search {}
 }
+
 .navigation {
+
+ 
+
+  @include viewport-large-max {
+
+    &--open {
+
+      background: $color-open-color-gray-0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      left: 0;
+      height: 100vh;
+
+      & .navigation__links {
+        background: $color-open-color-gray-0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+
+        li {
+          position: relative;
+          font: $typography-heading-2;
+        }
+      }
+    }
+  }
+
   &__links {
     display: none;
     gap: 24px;
@@ -96,13 +161,30 @@
 }
 
 .theme {
-  & button {
+  &__button {
+    position: relative;
+    width: 40px;
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background: none;
+    border: none;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  & .menu__button {
     transition: 0.3s;
+
     &:hover {
       cursor: pointer;
       transform: scale(1.1);
     }
   }
+
   &__icon {
     transition: 0.3s;
     transform: rotate(120deg);

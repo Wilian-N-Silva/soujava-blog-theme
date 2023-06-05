@@ -5,6 +5,7 @@ body.dark {
   & .light-mode-only {
     display: none;
   }
+
   & .dark-mode-only {
     display: block;
   }
@@ -15,7 +16,11 @@ body.dark {
   }
 
   .navigation {
+    background: $color-open-color-gray-10;
+
     &__links {
+      background: $color-open-color-gray-10;
+
       li {
         color: $color-open-color-gray-1;
 
@@ -24,15 +29,21 @@ body.dark {
         }
       }
     }
+
+    &.pagination {
+      background: transparent;
+    }
   }
 
   .footer {
     &__title {
       color: $color-open-color-gray-1;
     }
+
     &__links {
       color: $color-open-color-gray-3;
     }
+
     &__rights {
       color: $color-open-color-gray-3;
     }

@@ -1,14 +1,23 @@
-body.debug {
-  * {
-    border: 1px solid red;
+body {
+  .debug {
+    * {
+      border: 1px solid red;
+    }
+  }
+
+  .no-scroll {
+    overflow: hidden;
   }
 }
+
+
 
 @media screen and (max-width: $viewport-max-width-large) {
   .desktop-only {
     display: none !important;
   }
 }
+
 @media screen and (min-width: $viewport-min-width-xl) {
   .mobile-only {
     display: none !important;
