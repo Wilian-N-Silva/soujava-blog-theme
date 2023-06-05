@@ -73,17 +73,16 @@
       &--close {
         z-index: 99;
 
-        img {
+        &.open {
           z-index: -1;
-
-          &.open {
-            display: none;
-          }
-
-          &.close {
-            display: block;
-          }
+          display: none;
         }
+
+        &.close {
+          z-index: -1;
+          display: block;
+        }
+
       }
     }
   }
@@ -93,7 +92,7 @@
 
 .navigation {
 
- 
+
 
   @include viewport-large-max {
 
