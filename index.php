@@ -15,11 +15,18 @@
 					</div>
 				</div>
 			<?php endwhile; ?>
+			<?php the_posts_pagination(array(
+				'mid_size'  => 2,
+				'prev_text' => __('Anterior', 'textdomain'),
+				'next_text' => __('Próxima', 'textdomain'),
+			)); ?>
 		<?php endif; ?>
 
-		<?php get_footer(); ?>
-		<script type="module" src="<?php echo get_theme_file_uri('/assets/js/main.js'); ?>"></script>
 
-		</body>
+	</main>
+	<?php get_footer(); ?>
+	<script type="module" src="<?php echo get_theme_file_uri('/assets/js/main.js'); ?>"></script>
 
-		</html>
+	</body>
+
+	</html>

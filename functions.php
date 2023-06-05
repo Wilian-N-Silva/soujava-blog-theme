@@ -1,4 +1,5 @@
 <?php
+
 if (!function_exists('soujava_theme_setup')) :
   /**
    * Sets up theme defaults and registers support for various
@@ -46,7 +47,7 @@ if (!function_exists('soujava_theme_setup')) :
      * Enable support for the following post formats:
      * aside, gallery, quote, image, and video
      */
-    add_theme_support('post-formats', array('aside', 'gallery', 'quote', 'image', 'video', 'author'));
+    add_theme_support('post-formats', array('aside', 'gallery', 'quote', 'image', 'video', 'author', 'navigation-widgets'));
 
     if (!current_user_can('manage_options')) {
       show_admin_bar(false);
