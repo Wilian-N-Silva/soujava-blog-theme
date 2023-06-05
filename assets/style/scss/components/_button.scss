@@ -1,11 +1,20 @@
 .btn {
   transition: 0.3s;
 
+  &--404 {
+    font: $typography-author;
+    letter-spacing: 0.03em;
+    background: $color-brand-red;
+    border-radius: 16px;
+    padding: 8px 16px;
+    color: $color-open-color-gray-0;
+  }
+
   &--share {
     display: none;
     border: none;
     font: $typography-author;
-    letter-spacing: 0.03%;
+    letter-spacing: 0.03em;
     background: transparent;
     border-radius: 16px;
     padding: 8px 16px;
