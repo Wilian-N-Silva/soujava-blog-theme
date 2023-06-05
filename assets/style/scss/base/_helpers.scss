@@ -1,11 +1,11 @@
 body {
-  .debug {
+  &.debug {
     * {
       border: 1px solid red;
     }
   }
 
-  .no-scroll {
+  &.no-scroll {
     overflow: hidden;
   }
 }
